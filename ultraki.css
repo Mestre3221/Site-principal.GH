@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 60px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    color: white;
+}
+
+#logo{
+    width: 100px;
+    margin-left: 20px;
+
+}
+
+.menu{
+    list-style: none;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color:white;
+    padding: 30px;
+}
+
+.menu a:houver{
+    color:yellow;
+}
+
+.container{
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(imgs/maurice.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+h3 spam{
+    color:blue;
+}
+
+h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    color:white;
+}
+
+img{
+    width: 1000px;
+}
+
+p{
+    font: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: rgba(255, 255, 255);
+}
+
+.btns{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    margin-top: 72px;
+}
+
+.btn a{
+    padding: 15px 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(32, 8, 8);
+    color: rgba(255, 255, 255 )
+}
+
+.btns a:houver{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.6);
+    background-color: rgba(8, 32, 30, 0.6);
+}
+

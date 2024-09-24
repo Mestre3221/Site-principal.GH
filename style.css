@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 60px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    color: white;
+}
+
+#logo{
+    width: 100x;
+    margin-left: 20px;
+
+}
+
+.menu{
+    list-style: none;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color:white;
+    padding: 30px;
+}
+
+.menu a:houver{
+    color:yellow;
+}
+
+.container{
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

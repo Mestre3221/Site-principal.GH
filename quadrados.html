@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery</title>
+<style>
+#janela {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(65, 41, 85);
+  top: 0; 
+  left: 0; 
+}
+button {
+  margin: 5px;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function() {
+  const distancia = 50; 
+ 
+  function moverObjeto(direcao) {
+    let pos = $('#janela').position();
+    let novaPos = {};
+ 
+    switch(direcao) {
+      case 'direita':
+        novaPos.left = pos.left + distancia;
+        break;
+      case 'esquerda':
+        novaPos.left = pos.left - distancia;
+        break;
+      case 'baixo':
+        novaPos.top = pos.top + distancia;
+        break;
+      case 'cima':
+        novaPos.top = pos.top - distancia;
+        break;
+    }
+   
+    
+    $('#janela').animate(novaPos, 500);
+  }
+ 
+  $('#direita').click(function() { moverObjeto('direita'); });
+  $('#esquerda').click(function() { moverObjeto('esquerda'); });
+  $('#baixo').click(function() { moverObjeto('baixo'); });
+  $('#cima').click(function() { moverObjeto('cima'); });
+});
+</script>
+</head>
+<body>
+<input type="button" id="direita" value="Mover para Direita" />
+<input type="button" id="esquerda" value="Mover para Esquerda" />
+<input type="button" id="baixo" value="Mover para Baixo" />
+<input type="button" id="cima" value="Mover para Cima" />
+<div id="janela"></div>
+</body>
+</html>
+ 
+ 
